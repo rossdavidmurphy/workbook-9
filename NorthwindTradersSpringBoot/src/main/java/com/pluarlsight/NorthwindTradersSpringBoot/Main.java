@@ -1,13 +1,17 @@
 package com.pluarlsight.NorthwindTradersSpringBoot;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NorthwindTradersSpringBootApplication {
+public class Main implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NorthwindTradersSpringBootApplication.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 
+	@Override
+	public void run(String... args) throws Exception {
+	}
 }
